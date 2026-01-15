@@ -163,4 +163,5 @@ function startGame() {
 </script>
 
 </body>
+
 </html>
