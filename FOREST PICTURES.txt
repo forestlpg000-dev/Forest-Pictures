@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forest Pictures</title>
+
+<style>
+/* =========================
+   🌲 GAME THEME COLORS
+   ========================= */
+:root {
+    --deep-forest: #1e3d34;
+    --moss: #5f7f63;
+    --leaf: #a3c9a8;
+    --background: #eef5ef;
+    --text: #1f2f2b;
+    --card: rgba(255,255,255,0.85);
+}
+
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(to bottom, #cfe3d6, #eef5ef);
+    color: var(--text);
+}
+
+/* HERO / INTRO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.6)
+    ), 
+    url("https://images.unsplash.com/photo-1534577403868-27b805ca4b9c?q=80&w=1066&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.start-btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--leaf);
+    color: var(--deep-forest);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #cfe9d4;
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: var(--card);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    color: var(--deep-forest);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--deep-forest);
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+<section class="hero">
+    <h1>Forest Pictures</h1>
+    <p>
+        Deep within the ancient forest lies a world untouched by time.
+        The trees remember every step taken, every choice made.
+        Tonight, the forest awakens… and it knows your name. 
+    </p>
+
+    <button class="start-btn" onclick="startGame()">🌲 Enter the Forest</button>
+</section>
+
+<!-- LORE SECTION -->
+<section class="section">
+    <div class="card">
+        <h2>HINATSU VOYAGE</h2>
+        <p>
+            Think fast.
+            Don’t hesitate.
+            Your life depends on the choices you make.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> Deep Within... </h2>
+        <p>
+            Every choice shapes the path.
+            Will you protect its balance, uncover its secrets,
+            or awaken something long forgotten?
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎮 Gameplay Preview</h2>
+        <ul>
+            <li>🌱 Exploration-driven storytelling</li>
+            <li>🌲 Choices that affect the world</li>
+            <li>📖 Lore revealed through discovery</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Forest Pictures</p>
+</footer>
+
+<script>
+function startGame() {
+    alert("The forest stirs... (Hinatsu voyage coming soon)");
+}
+</script>
+
+</body>
+</html>
